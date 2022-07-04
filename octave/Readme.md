@@ -7,3 +7,9 @@ For troubleshooting, please join the [GNU Octave community forum](https://octave
 
 Most Matlab scripts that do not use third party toolboxes usually work on Octave without too many tweaks.
 This folder includes scripts with the necessary tweaks included.
+
+
+## Changes from MatLab
+
+- rng -> randn, rand
+-
