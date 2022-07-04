@@ -1,4 +1,5 @@
-rng(3);
+randn("seed", 3)
+rand("seed", 3)
 
 N = 100;
 
