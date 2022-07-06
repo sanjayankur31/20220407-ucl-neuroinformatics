@@ -26,7 +26,6 @@ M1 = (toeplitz(numpy.arange(N-1, -1, -1))/N)
 # Python: M.shape
 # print(M1.shape)
 
-
 p = numpy.zeros([Nr, 1])
 r = numpy.zeros([Nr, 1])
 
@@ -46,14 +45,14 @@ print(f"Significant at p<.05 in {(100*sum(p<.05)/Nr)[0]} percent of cases")
 # Plots using matplotlib
 fig = plt.figure()
 m1, m2, ax1 = fig.subplots(1, 3)
+# Correlation matrix 1
 m1.matshow(M1)
 m1.set_title("Correlation matrix 1")
-
+# Correlation matrix 2
 m2.matshow(M2)
 m2.set_title("Correlation matrix 1")
-
+# Pearson correlation
 ax1.set_title("Pearson correlation")
 ax1.hist(r, bins=20)
 ax1.plot([r[-1], r[-1]], ax1.get_ylim())
-
 plt.show()
