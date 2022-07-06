@@ -50,7 +50,7 @@ m1.matshow(M1)
 m1.set_title("Correlation matrix 1")
 # Correlation matrix 2
 m2.matshow(M2)
-m2.set_title("Correlation matrix 1")
+m2.set_title("Correlation matrix 2")
 # Pearson correlation
 ax1.set_title("Pearson correlation")
 ax1.hist(r, bins=20)
